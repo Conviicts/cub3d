@@ -182,7 +182,6 @@ typedef struct	s_game
 }				t_game;
 
 int				get_next_line(int fd, char **line, t_game *game);
-void			init_game(t_game *game);
 int				write_error(t_game *game, char *error);
 int				check_args(t_game *game, int ac, char **av);
 int				init_map(t_game *game);
