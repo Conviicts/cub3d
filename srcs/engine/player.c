@@ -61,25 +61,6 @@ void	set_orientation(t_game *game, char orient)
 	set_plane(game, orient);
 }
 
-int		init_player(t_game *game, t_player *player)
-{
-	game->player.pos.x = -1;
-	game->player.pos.y = -1;
-	player->dir.x = -1;
-	player->dir.y = 0;
-	player->plane.x = 0;
-	player->plane.y = 0.66;
-	player->rot_speed = 0.05;
-	player->speed = 0.05;
-	player->forward = 0;
-	player->backward = 0;
-	player->left = 0;
-	player->right = 0;
-	player->turn_left = 0;
-	player->turn_right = 0;
-	return (1);
-}
-
 void	straf(t_game *g)
 {
 	if (g->player.left)
